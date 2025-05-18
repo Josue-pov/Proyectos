@@ -1,0 +1,183 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+video {
+  width:65%;
+  height: auto;
+  border-radius: 8px;
+}
+
+header {
+  background: linear-gradient(45deg, #ee00ff, #1d1556);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+nav {
+  background: #2d3436;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #6c5ce7;
+}
+
+.links{
+  color: inherit;
+  text-decoration: none ;
+}
+
+.contenedor {
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main {
+  flex: 3;
+  margin-right: 2rem;
+}
+
+section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  display: none;
+}
+
+section.activa {
+  display: block;
+}
+
+aside {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+/*Tengo que confesar que a veces no me gusta tu forma de actuar
+no me gsuta tu forma de ser
+luego te me desaparecers
+y no entiendo por qué
+
+no dices nada romántico
+cuando llega el atardecer
+te poner de un humor extraño
+con cada luna llena al mes 🗣️🗣️🔥‼️*/
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+button {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #5649d1;
+}
+
+footer {
+  background: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  
+  main {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.banner {
+  transition: transform 0.3s, box-shadow 0.3s;
+  filter: grayscale(70%); 
+}
+
+.banner:hover {
+  transform: scale(1.05); /*antes de que se me olvide, esto solo escala un poco y aunque quede un poco mal en el fondoJS toca soprtar*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0); 
+}
+
+.perfil-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.perfil-imagen {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.perfil-descripcion {
+  flex: 1;
+  color: #333;
+}
+
+/*los gatos son los animales más tontos que hay 😺*/
