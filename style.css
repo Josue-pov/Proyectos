@@ -180,4 +180,13 @@ footer {
   color: #333;
 }
 
+#descripcion {
+  display: flex;
+  justify-content: left;
+  font-size: small;
+  margin-top: 1rem;
+  background-color: white;
+  color: gray;
+}
+
 /*los gatos son los animales más tontos que hay 😺*/

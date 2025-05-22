@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <link rel="script" href="script.js">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Web</title>
 </head>
@@ -33,15 +34,34 @@
         </p>
           <li style="margin-top: 0.5rem ;"><video src="Videos/sistema_contablemp4.mp4" muted controls></video></li> <!--Usamos la etiqueta <video> para mostrar video, podemos usar el atributo autoplay para que empiece a reporoducirse desde el inico
             en este caso usamos controls para habilitar los controles de interacción del video (pausa, mute, adelantar-retroceder) y empezamos con muted para silecniar el video desde el incio-->
+            <footer id="descripcion"><em>Trabajo hecho en grupo (Josue Torres y Jimmy Camey)</em></footer>
         </section>
         <section id="sobre-mi">
           <h2>Sobre nostros</h2>
           <div class="perfil-contenedor">
-            <img src="Images/groupimage.jpg" alt="Gato del grupo" class="perfil-imagen">
+            <img src="Images/Umg.png" alt="Logo UMG" class="perfil-imagen">
             <div class="perfil-descripcion">
-              <p>Hola, somos un grupo de la clase de introducción a los sistemas de cómputo.</p>
-              <p>En este apartado verás en lo que hemos trabajado y de ideas que han surgido como equipo para mejorar nuestras habilidades de programación, espero te guste.</p>
+              <p>Somos un grupo de la clase de introducción a los sistemas de cómputo.</p>
+              <p>En este apartado verás en lo que hemos trabajado y de ideas que han surgido como equipo para mejorar nuestras habilidades de programación.</p>
             </div>
+          </div>
+          <br>
+          <h2>Integrantes</h2>
+          <h3>Josue Sosa</h3>
+          <div class="perfil-contenedor">
+            <img src="Images/josue_torres.jpg" alt="Josue Torres" class="perfil-imagen">
+            <div class="perfil-descripcion">
+              <p>Hola, soy Josue Torres, tengo 20 años y soy estudiante de la Universidad Mariano Gálvez de Guatemala.</p>
+              <p>Me encanta el mundo de la programación y de sistemas de cómputo, dedico mi tiempo a aprende y a hacer prgramas funcionales. Espero que disfrutes de nuestro trabajo.</p>
+            </div>
+          </div>
+
+          <h3>Jimmy Camey</h3>
+          <div class="perfil-contenedor">
+            <Img class="perfil-imagen" src="Images/jimmy_camey.jpg" alt="Jimmy Camey">
+            <div class="perfil-descripcion">
+              <p>Hola, soy Jimmy Camey, tengo 18 años y soy estudiante de la Universidad Mariano Gálvez de Guatemala.</p>
+              <p>Soy entusiasta de los circuitos y de los lenguajes de programación. Espero que disfrutes de nuestro trabajo.</p>
           </div>
         </section>
         <section id="contacto">
@@ -88,32 +108,7 @@
     </footer>
     <!-- aún tengo que aprnder como se usa JS porque no entiendo, solo fue copiado de lo que la ingeniera ya mostró en el drive -->
     <script> 
-      function mostrarSeccion(id) { // Cambia la sección activa
-        document.querySelectorAll('section').forEach(seccion => // Elimina la clase activa de todas las secciones
-        {
-          seccion.classList.remove('activa');
-        });
-        document.getElementById(id).classList.add('activa'); // Agrega la clase activa a la sección seleccionada
-      }
-      function enviarFormulario(event) // Envía el formulario aunque en realidad no se envía porque no tiene a donde jajajaja
-      {
-        event.preventDefault();
-        //event.target.submit() es para enviar el formulario a un servidor, pero no lo tenemos como ya dije jajajaja
-        const nombre = document.getElementById('nombre').value;
-        const mensajeEnviado = document.getElementById('mensaje-enviado');
-      
-        mensajeEnviado.textContent = `Gracias ${nombre}, tu mensaje ha sido enviado.`;
-        mensajeEnviado.style.display = 'block';
-        
-        event.target.reset();
-        
-        setTimeout(() => {
-          mensajeEnviado.style.display = 'none';
-        }, 5000);
-      }
-      window.onload = function() {
-        mostrarSeccion('inicio');
-      }; //esto último es para que al cargar la página se muestre la sección de inicio por defecto
+
     </script>
 </body>
 </html>
