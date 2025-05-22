@@ -68,7 +68,7 @@
           <h2>Contacto</h2>
           <p>¿Tienes alguna sugerencia de proyecto nuevo que podamos hacer? ¡Envíanos mensaje!</p>
           
-          <form onsubmit="enviarFormulario(event)">
+          <form action="https://formspree.io/f/xwpojvwj" method="post">
             <div>
               <label for="nombre">Nombre del proyecto:</label>
               <input type="text" id="nombre" required autocomplete="off">
@@ -82,7 +82,8 @@
               <textarea id="mensaje" rows="5" required autocomplete="off"></textarea>
             </div>
             <button type="submit">Enviar mensaje</button>
-          </form>         
+          </form>  
+       
           <p id="mensaje-enviado" style="margin-top:1rem; padding:0.75rem; background:#d4edda; color:#155724; border-radius:4px; display:none;"></p>
         </section>
       </main>    
